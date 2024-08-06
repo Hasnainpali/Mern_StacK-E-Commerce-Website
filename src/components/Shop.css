@@ -1,0 +1,18 @@
+.product-imgs{
+    width: 250px;
+    height: 300px;   
+}
+
+
+.product-img img {
+    display: block; 
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  @media (min-width: 992px){
+   .col-lg-4 {
+    flex: 0 0 30%;
+    max-width: 33.33333%;
+    }
+  }

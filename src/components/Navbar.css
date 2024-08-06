@@ -1,0 +1,14 @@
+@media (max-width: 991px) {
+    .navbar-toggler {
+        order: -1; 
+      }
+      
+    .navbar-nav.d-lg-block {
+        display: none;
+      }
+    
+      .navbar-nav.d-lg-block.mobile-visible {
+        display: flex !important; 
+        align-items: center;
+      }
+  }

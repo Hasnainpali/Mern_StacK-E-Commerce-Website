@@ -1,0 +1,13 @@
+#checkout{
+    .custom-table th,
+.custom-table td {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+.custom-table thead tr,
+.custom-table tbody tr,
+.custom-table tfoot tr {
+  border-bottom: none !important;
+}
+}

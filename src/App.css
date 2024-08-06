@@ -1,0 +1,301 @@
+.sliderSml *,.sliderBig *{
+  transition: all 0.2s !important;
+}
+.sliderSml .slick-slide{
+   padding-right: 2px;
+   padding-left: 2px;
+}
+.sliderSml .item{
+  border-radius: 7px;
+  overflow: hidden;
+  border: 2px dashed #ccc !important ;
+  cursor: pointer;
+}
+.sliderSml .slick-slide .item{
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sliderSml img{
+  aspect-ratio: 2/2;
+}
+.sliderBig img{
+  aspect-ratio: 2/2;
+}
+
+.sliderSml .slick-current .item {
+   border: 2px solid rgb(112, 105, 105) !important;  
+}
+:focus-visible {
+  outline: none !important;
+  border: none !important;
+}
+.sliderBig {
+  overflow: hidden;
+  border-radius: 7px ;
+  padding: 10px;
+  /* border: 2px dashed #ccc !important ; */
+  cursor: pointer;
+}
+
+.bade {
+  color: white;
+  border-radius: 50%;
+  padding: 5px ;
+  font-size: 14px;
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  z-index: 999;
+}
+
+.badelandingpage {
+  color: white;
+  border-radius: 50%;
+  padding: 5px ;
+  font-size: 14px;
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  z-index: 999;
+}
+
+.filterTabs .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transform: all 0.2s;
+  font-size: 13px;
+  font-weight: 700;
+  border: none !important;
+  outline: none !important;
+}
+ .relatedProduct{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+ }
+
+ .MyAcc {
+  text-align: left;
+  color:#000 !important;
+  text-transform: capitalize;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+  color: #ffc107 !important;
+}
+
+.MyAcc .user-info{
+  padding-left: 10px;
+}
+.MyAcc .user-info h4{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: #292929;
+}
+body.dark .MyAcc .user-info h4{
+  color: #fff !important;
+}
+.MyAcc .user-info p{
+  font-size: 12px;
+  margin-top: 0px;
+  color: #000;
+  opacity: 0.7;
+}
+/* body.dark .MyAcc .user-info p{
+  color: #fff !important;
+} */
+
+.user-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ffc107 ;
+  padding: 3px;
+  border-radius: 100%;
+}
+.user-img .rounded-circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.user-img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.css-1idz92c-MuiCircularProgress-svg {
+  display: block;
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+#account-menu li{
+  font-size: 14px !important;
+  /* padding: 12px 15px !important; */
+}
+#account-menu li svg{
+  font-size: 20px !important;
+}
+#account-menu .MuiPaper-elevation{
+  left:1150px !important;
+  top:50px !important;
+}
+
+ @media screen and (max-width:480px) {
+  #account-menu .MuiPaper-elevation{
+    left:190px !important;
+    top:50px !important;
+  }
+ }
+ @media screen and (min-width:576px) and(max-width:899px) {
+  #account-menu .MuiPaper-elevation{
+    left:580px !important;
+    top:50px !important;
+  }
+ }
+ @media screen and (min-width:900px) and (max-width:950px) {
+  #account-menu .MuiPaper-elevation{
+    left:700px !important;
+    top:50px !important;
+  }
+ }
+/* body.dark #account-menu .MuiPaper-elevation{
+  background: #12254e !important;
+  color: #fff !important;
+} */
+/* #Notication-menu .MuiPaper-elevation {
+   top:58px !important;
+   right: 100px !important;
+   left: auto !important;
+   width: 300px !important;
+   overflow: hidden !important;
+} */
+
+/* body.dark #Notication-menu .MuiPaper-elevation {
+  background: #12254e !important;
+  color: #fff !important;
+} */
+.css-6hp17o-MuiList-root-MuiMenu-list {padding-bottom: 0px !important;}
+.head h4{
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+body.dark .dropdown_list li.MuiButtonBase-root{
+  background: #264b9d !important;
+  color: #fff !important;
+}
+.dropdown_list li.MuiButtonBase-root{
+  background: #ebf6ff !important;
+  color: #000 !important;
+  padding: 10px 12px !important;
+  margin: 0.3rem !important;
+  border-radius: 10px !important;
+}
+.Dropdowninfo{
+  padding-left: 9px;
+}
+.Dropdowninfo h4{
+  font-size: 12px;
+  font-weight: 500;
+  white-space:break-spaces;
+  line-height: 20px;
+  margin-top: 0px;
+}
+.Dropdowninfo h4 b{
+  font-weight: 600;
+  margin-right: 5px;
+}
+.Dropdowninfo p{
+  font-size: 11px !important;
+  font-weight: 500px ;
+  margin-top: 0px !important;
+}
+.text-sky{
+  color: #0858f7 !important;
+}
+
+.dropdown_list .icon svg{
+   font-size: 20px;
+}
+.dropdown_list .scroll{
+  max-height: 280px;
+  overflow-y: scroll;
+}
+.btn-blue{
+  background: #ffc107 !important;
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.dropdown_list .btnn{
+  border-radius: 5px;
+  margin: 10px 4px
+}
+.dropdown_list .btnn .btn-blue{
+  background-color: #ffc107;
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Active{
+   border: 1px solid #ffc107;
+   background-color: #ffc107;
+}
+
+.tableOrder{
+  white-space: nowrap;
+}
+.tableOrder button.close {
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+.tableOrder .img{
+   width: 70px;
+   height: 70px;
+   overflow: hidden;
+}
+.tableOrder .img img{
+  width: 100%;
+}
+.tableOrder .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: calc(100% - 64px);
+  max-width: 850px;
+}

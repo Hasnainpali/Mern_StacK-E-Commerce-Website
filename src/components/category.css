@@ -1,0 +1,18 @@
+.category{
+    border-radius: 10px;
+    width: 180px !important;
+    max-height: 300px !important;
+    margin: auto;
+}
+.category-imgs {
+    padding: 10px;
+    width: 70%;
+    height: 70%;
+}
+
+.category .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, -5px) !important;
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 100%;
+}
