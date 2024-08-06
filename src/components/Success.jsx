@@ -26,7 +26,7 @@ const PaymentSuccess = () => {
   return (
     <div className="m-2">
        <div className='d-flex flex-column justify-content-center align-items-center mt-4 successBox' style={{margin:'auto', borderRadius:"30px", backgroundColor:"ButtonShadow"}}>
-       <i className='icon'> <FaThumbsUp/> </i>
+       <i className='iconSuccess'> <FaThumbsUp/> </i>
       <h3 className='heading'>Payment Successful!</h3>
       {/* <p>Your payment was processed successfully. Thank you for your purchase.</p> */}
       <div className="buttn mb-3" style={{gap:"10px"}} >
