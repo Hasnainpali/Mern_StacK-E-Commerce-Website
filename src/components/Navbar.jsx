@@ -138,13 +138,6 @@ export default function Navbar() {
                       >
                         Shopping Cart
                       </Link>
-                      <Link
-                        to="/checkout"
-                        className="dropdown-item"
-                        onClick={closeMenu}
-                      >
-                        Checkout
-                      </Link>
                     </div>
                   </div>
                   <Link
