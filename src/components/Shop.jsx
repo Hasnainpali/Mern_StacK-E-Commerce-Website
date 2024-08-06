@@ -200,7 +200,7 @@ export default function Shop() {
                 </div>
               </div>
             </div>
-            <div className="row pb-1 pl-3">
+            <div className="row justify-content-center pb-1 pl-3">
               {isLoading === true ? (
                 <ProductBar count={6} />
               ) : (

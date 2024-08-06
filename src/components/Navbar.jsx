@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import "./Navbar.css";
 import { CartContext } from "./Context Api/ShopContext";
 import { fetchDataFormApi } from "./utility/Api";
@@ -7,7 +7,8 @@ import { UserContext } from "./Context Api/UserAuthContext";
 
 export default function Navbar() {
   const {setSelected} = useContext(UserContext)
-  const {id} = useParams()
+  const {id} = useParams();
+  const location = useLocation();
   const [isOpen, setisOpen] = useState(false);
   const { cartItem,setCartItem } = useContext(CartContext);
   const [catData, setCatData] = useState([]);
@@ -16,7 +17,15 @@ export default function Navbar() {
     setisOpen(!isOpen);
   };
   const closeMenu = () => {
+    console.log("Closing menu"); // Debug statement
     setisOpen(false);
+    const navbarVertical = document.getElementById('navbar-vertical');
+    if (navbarVertical) {
+      const collapseInstance = new window.bootstrap.Collapse(navbarVertical, {
+        toggle: false,
+      });
+      collapseInstance.hide();
+    }
   };
   
   //  const selectCat = (cat) =>{
@@ -35,6 +44,9 @@ export default function Navbar() {
     } 
   }, []);
 
+  useEffect(() => {
+    closeMenu(); // Close dropdown when URL changes
+  }, [location]);
 
   return (
     <div className="container-fluid bg-dark mb-30" id="bact to top">
@@ -53,7 +65,7 @@ export default function Navbar() {
             <i className="fa fa-angle-down text-dark"></i>
           </a>
           <nav
-            className={`collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light `}
+            className={`collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light ${isOpen ? "show" : ""} `}
             id="navbar-vertical"
             style={{ width: "calc(100% - 30px)", zIndex: 999 }}
           >
