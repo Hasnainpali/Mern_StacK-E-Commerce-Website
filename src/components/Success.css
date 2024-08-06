@@ -1,0 +1,33 @@
+.successBox{
+    width: 50%;
+    padding: 16px;
+}
+
+.successBox .heading{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.successBox .icon{
+  width: 100%;
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  color: rgb(126, 223, 126);
+}
+.successBox .buttn{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    width: 100%;
+}
+.successBox button{
+    font-size: 14px;
+}
+
+@media only screen and (max-width:696px) {
+    .successBox{
+        width: 100%;
+        padding:12px;
+    }
+}
