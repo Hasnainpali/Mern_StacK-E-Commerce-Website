@@ -166,7 +166,7 @@ export default function ShoppingCart() {
                   </td>
                   <td className="align-middle">
                     <div className="mx-auto" style={{ maxWidth: "100px" }}>
-                      <div className="d-flex">
+                      <div className="d-none-flex justify-content-center align-items-center d-md-flex d-lg-flex ">
                         <button
                           className="btn btn-sm btn-primary btn-minus"
                           onClick={() => minus(index)}
@@ -175,9 +175,10 @@ export default function ShoppingCart() {
                         </button>
                         <input
                           type="text"
-                          className="form-control bg-secondary border-0 text-center"
+                          className="form-control bg-secondary border-0 text-center w-50 mx-auto"
                           value={item.quantity}
                           onChange={(e) => handleQuantityChange(index, e.target.value)}
+                          style={{padding:'0px'}}
                         />
                         <button
                           className="btn btn-sm btn-primary btn-plus"

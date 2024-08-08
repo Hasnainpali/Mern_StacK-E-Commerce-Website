@@ -105,7 +105,7 @@ export default function ProductSlider(props) {
                 type="button"
                 class="btn btn-outline-primary ml-auto button  "
               >
-                <Link to={'/shop'} className="text-dark text-decoration-none">
+                <Link to={'/product'} className="text-dark text-decoration-none">
                   View All <IoIosArrowRoundForward />
                 </Link>
               </button>

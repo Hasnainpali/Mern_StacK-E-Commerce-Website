@@ -15,9 +15,9 @@ export default function Home() {
     <div>
         <HeroSection/>
         <Category/>
-        <ProductSlider title="Featured Product" description=" Do not misss the current offers until the end of march." image="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg"/>
+        <ProductSlider title="Featured Product" description=" Do not misss the current offers until the end of march." image="/img/banner1.jfif"/>
         <OffersBanner/>
-        <ProductList title="New Products" description="New Products with updated Stock.." image="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" />
+        <ProductList title="New Products" description="New Products with updated Stock.." image="/img/banner2.avif" />
         <NewsLetter/>
         <Featured/>
        

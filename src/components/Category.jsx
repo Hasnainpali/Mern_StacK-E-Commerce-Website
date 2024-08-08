@@ -33,7 +33,7 @@ export default function Category() {
     <div className="container-fluid categorys">
       <div className="row px-xl-5 py-3">
         <h2 className='ml-3 mb-3 font-weight-bold'>Category</h2>
-        <div className="col-lg-12 col-md-12 col-sm-12 ">         
+        <div className="col-lg-12 col-md-12 col-sm-12 " >         
           <Swiper
             spaceBetween={40}
             navigation={true}
@@ -41,13 +41,14 @@ export default function Category() {
               clickable: true,
             }}
             modules={[Navigation, Pagination]}
-            className="mySwiper "
+            className="mySwiper " 
             breakpoints={{
               1024: { slidesPerView: 6 },
               768: { slidesPerView: 3 },
               576: { slidesPerView: 1 },
               375: { sliderPerView: 1 },
             }}
+            style={{height:'190px'}}
           >
            {isLoading === true ? <ProductBar count={3}/> :
            (
@@ -56,7 +57,7 @@ export default function Category() {
               return(
                 <SwiperSlide>
             <div className="category product-item bg-light  " key={index} >
-              <div className="d-flex flex-column justify-content-center align-items-center product-item position-relative overflow-hidden" onClick={() => navigate(`product/category/${data.id}`)} >
+              <div className="d-flex flex-column justify-content-center align-items-center product-item position-relative overflow-hidden" onClick={() => navigate(`product/category/${data.id}`)}   >
                 <img
                   className="img-fluid category-imgs"
                   src={data.images}

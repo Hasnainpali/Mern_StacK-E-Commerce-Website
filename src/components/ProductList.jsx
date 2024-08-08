@@ -33,7 +33,7 @@ export default function ProductList(props) {
                 className="cursor"
               />
             </div>
-            <div className="Banner mb-2">
+            <div className="Banner d-none mb-2">
               <img
                 src={image}
                 alt="banner"
@@ -53,7 +53,7 @@ export default function ProductList(props) {
                 type="button"
                 class="btn btn-outline-primary ml-auto button  "
               >
-                <Link to={'/shop'} className="text-dark text-decoration-none">
+                <Link to={'/product'} className="text-dark text-decoration-none">
                   View All <IoIosArrowRoundForward />
                 </Link>
               </button>

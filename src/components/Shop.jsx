@@ -208,7 +208,7 @@ export default function Shop() {
                   {filteredData?.length > 0 &&
                     filteredData?.map((product) => (
                       <div
-                        className="d-flex flex-wrap ml-3 product-item bg-light mb-4"
+                        className="d-flex flex-wrap ml-0 ml-md-3 product-item bg-light mb-4"
                         key={product.id}
                       >
                         <div

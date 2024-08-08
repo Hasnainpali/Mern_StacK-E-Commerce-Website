@@ -7,6 +7,14 @@
     width: 30px
 }
 
+.qty{
+    padding: 0px;
+}
+@media only screen and (max-width:540px){
+    .qty{
+        padding: 10px;
+    }
+}
 @media only screen and (min-width:540px){
     .productName{
         display: flex;
@@ -16,5 +24,7 @@
     .productName img{
         width: 50px;
     }
+
+    
 
     }

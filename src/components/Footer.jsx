@@ -56,17 +56,11 @@ export default function Footer() {
                   <a class="text-secondary mb-2"   href="/">
                     <i class="fa fa-angle-right mr-2"></i>Home
                   </a>
-                  <a class="text-secondary mb-2"   href="/shop">
+                  <a class="text-secondary mb-2"   href="/product">
                     <i class="fa fa-angle-right mr-2"></i>Our Shop
-                  </a>
-                  <a class="text-secondary mb-2"   href="/shop-detail">
-                    <i class="fa fa-angle-right mr-2"></i>Shop Detail
                   </a>
                   <a class="text-secondary mb-2"   href="/shopping-cart">
                     <i class="fa fa-angle-right mr-2"></i>Shopping Cart
-                  </a>
-                  <a class="text-secondary mb-2"   href="/checkout">
-                    <i class="fa fa-angle-right mr-2"></i>Checkout
                   </a>
                   <a class="text-secondary"   href="/contact">
                     <i class="fa fa-angle-right mr-2"></i>Contact Us
@@ -79,17 +73,11 @@ export default function Footer() {
                   <a class="text-secondary mb-2"   href="/">
                     <i class="fa fa-angle-right mr-2"></i>Home
                   </a>
-                  <a class="text-secondary mb-2"   href="/shop">
+                  <a class="text-secondary mb-2"   href="/product">
                     <i class="fa fa-angle-right mr-2"></i>Our Shop
-                  </a>
-                  <a class="text-secondary mb-2"   href="/shop-detail">
-                    <i class="fa fa-angle-right mr-2"></i>Shop Detail
                   </a>
                   <a class="text-secondary mb-2"   href="/shopping-cart">
                     <i class="fa fa-angle-right mr-2"></i>Shopping Cart
-                  </a>
-                  <a class="text-secondary mb-2"   href="/checkout">
-                    <i class="fa fa-angle-right mr-2"></i>Checkout
                   </a>
                   <a class="text-secondary"   href="/contact">
                     <i class="fa fa-angle-right mr-2"></i>Contact Us
@@ -143,8 +131,8 @@ export default function Footer() {
                 Domain
               </a>
               . All Rights Reserved. Designed by
-              <a class="text-primary" href="https://htmlcodex.com">
-                HTML Codex
+              <a class="text-primary ml-1" href="https://github.com/Hasnainpali">
+                Hasnain Pali Coder
               </a>
             </p>
           </div>

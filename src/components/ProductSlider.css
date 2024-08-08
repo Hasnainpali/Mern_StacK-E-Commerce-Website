@@ -52,7 +52,7 @@
     position: absolute;
     z-index: 100;
     top: 50%;
-    left: -14px;
+    left: -20px;
     box-shadow: 0 0 30px #dddddd;
     border-radius: 50%;
 }
@@ -147,4 +147,20 @@
     width:300px;
     margin-top: 6px;
   }
+}
+
+@media screen and (max-width:567px) {
+  .productbanner .productrow .swiper-controls .next-btn {
+    border: none !important;
+    background: none !important;
+    outline: none !important;
+    font-size:20px !important;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 95%;
+    box-shadow: 0 0 30px #dddddd;
+    border-radius: 50%;
+}
+  
 }
