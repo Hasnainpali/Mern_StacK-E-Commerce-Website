@@ -208,16 +208,23 @@ export default function Signin() {
               <a href='#' className='text my-2'>Forgot Password?</a>
             </div>
           </div>
-         <div className="d-flex justify-content-center align-items-center w-100 my-2 ">
+         <div className="d-flex justify-content-center align-items-center w-100 my-3 ">
           <Button id='signup' type='submit' variant='contained' className='lh-0'>
             {
               loading === true ?  <CircularProgress/> : " Login  "
             }
           </Button>
          </div>
-         <div className="d-flex  align-items-center w-100 my-2">
+         <div className="d-flex align-items-center justify-content-between ">
+           <div className="d-flex align-items-center w-100 my-2">
          <span className='text-dark' style={{ fontSize: "16px" }}>Not Register?Click here </span>
          <Button variant='text' className='text my-2' id="signUp">SignUp</Button>
+           </div>
+           <div className='d-md-none d-lg-none'>
+             <Button variant='text'  color='warning' className='ml-2' onClick={handleGoHome}  >
+               GoHome 
+              </Button>
+           </div>
          </div>
           <div className="d-flex justify-content-center align-items-cente w-100 or my-2">
             <span className="line"></span>
@@ -229,6 +236,9 @@ export default function Signin() {
               <span className="icon"><FcGoogle/></span>
               Sign in with Google </Button>
           </div>
+          <div className='m-auto'> 
+        
+            </div>
           {/* <div className="d-flex mt-3 justify-content-center align-items-center">
             <span className='text-dark font-weight-normal '>Not Register?
               <a href='/signup' className='text'>Sign Up</a>
@@ -322,9 +332,16 @@ export default function Signin() {
             } 
             </Button>
           </div>
-          <div className="d-flex  align-items-center w-100 my-2">
-          <span className='text-dark' style={{ fontSize: "16px" }}>Already Register?Click here </span>
-          <Button variant='text' className='text my-2' id="signIn">SignIn</Button>
+          <div className="d-flex align-items-center justify-content-between ">
+           <div className="d-flex align-items-center w-100 my-2">
+         <span className='text-dark' style={{ fontSize: "16px" }}>Already Register? Click Here </span>
+         <Button variant='text' className='text my-2' id="signIn">Signin</Button>
+           </div>
+           <div className='d-md-none d-lg-none'>
+             <Button variant='text'  color='warning' className='ml-2' onClick={handleGoHome}  >
+               GoHome 
+              </Button>
+           </div>
          </div>
           <div className="d-flex justify-content-center align-items-center w-100 or my-2">
             <span className="line"></span>
