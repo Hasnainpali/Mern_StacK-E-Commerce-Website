@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import TopBar from "./components/TopBar";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Shop from "./components/Shop";
 import Home from "./components/Home";
 import ShopDetail from "./components/ShopDetail";
@@ -83,6 +83,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="product/category/:id" element={<ProductListing />} />
         <Route path="/product" element={<Shop />} />
+        <Route path="/product/:id" element={<Shop />} />
         <Route path="/product/detail/:id" element={<ShopDetail />} />
         <Route path="/shopping-cart" element={<ShoppingCart />} />
         <Route path="/checkout" element={<Checkout />} />

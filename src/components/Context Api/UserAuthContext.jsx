@@ -5,7 +5,8 @@ export const UserContext = createContext();
 export const UserProvide = ({children}) =>{
     const [isHeaderFooter,setisHeaderFooter]= useState(true);
     const [isLogin, setisLogin] = useState(false);
-    const [selected, setSelected] = useState("Mens ")
+    const [selected, setSelected] = useState("Mens ");
+    const [searchData, setSearchData] = useState([]);
     const [alertBox, setAlertBox] = useState({
         open:false,
         msg:"",
@@ -29,7 +30,9 @@ export const UserProvide = ({children}) =>{
             alertBox,
             setAlertBox,
             user,
-            setUser
+            setUser,
+            searchData,
+            setSearchData
          }}>
             {children}
         

@@ -17,6 +17,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import { FaClipboardCheck } from "react-icons/fa";
 import { IoShieldHalfSharp } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
+import { fetchDataFormApi } from "./utility/Api";
+import SearchBar from "./SearchBar";
 // import { Link, useNavigate } from "react-router-dom";
 // import { UserContext } from "../contextApi/UserAuthContext";
 
@@ -24,11 +26,12 @@ function TopBar() {
   const [isOpenAcc, setisOpenAcc] = useState(false);
   const [isOpenNotification, setisOpenNotification] = useState(false);
   const openAcc = Boolean(isOpenAcc);
-  const {isLogin, user, setUser, setAlertBox} = useContext(UserContext)
+  const {isLogin, user, setUser, setAlertBox,setSearchData} = useContext(UserContext)
   // const openNotification = Boolean(isOpenNotification);
   // const {isToggleSidebr, setisToggleSidebr, themeMode, setThemeMode} = useContext(SidebarContext);
   // const {isLogin, user, setAlertBox} = useContext(UserContext);
   const navigate = useNavigate();
+
 
 
   const OpenAccdrop = () => {
@@ -264,20 +267,7 @@ function TopBar() {
           </a>
         </div>
         <div className="col-lg-6 col-6 text-left">
-          <form action="">
-            <div className="input-group">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search for products"
-              />
-              <div className="input-group-append">
-                <span className="input-group-text bg-transparent text-primary">
-                  <i className="fa fa-search"></i>
-                </span>
-              </div>
-            </div>
-          </form>
+         <SearchBar/>
         </div>
         <div className="col-lg-2 col-6 text-left ">
       
