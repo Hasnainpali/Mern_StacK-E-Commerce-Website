@@ -9,8 +9,6 @@ import './Success.css';
 const PaymentSuccess = () => {
   const { setisHeaderFooter} = useContext(UserContext);
 
-
-
   useEffect(() => {
     setisHeaderFooter(false);
   }, [setisHeaderFooter]);

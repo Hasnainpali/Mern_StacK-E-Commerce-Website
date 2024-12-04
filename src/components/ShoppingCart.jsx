@@ -9,7 +9,7 @@ import {loadStripe} from '@stripe/stripe-js';
 export default function ShoppingCart() {
   const [cartData, setCartData] = useState([]);
   const navigate = useNavigate();
-  const {setAlertBox, BaseURl} = useContext(UserContext);
+  const {setAlertBox} = useContext(UserContext);
   const {setCartItem} = useContext(CartContext);
 
 
@@ -122,7 +122,8 @@ export default function ShoppingCart() {
   
       if (result.error) {
         console.error(result.error);
-      }
+      } 
+      
     } catch (error) {
       console.error("Failed to fetch", error);
     }
