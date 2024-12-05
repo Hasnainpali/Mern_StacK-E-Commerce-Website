@@ -8,29 +8,31 @@ import {loadStripe} from '@stripe/stripe-js';
 
 export default function ShoppingCart() {
   const [cartData, setCartData] = useState([]);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const {setAlertBox} = useContext(UserContext);
   const {setCartItem} = useContext(CartContext);
 
-
-  useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"));
-    if (user && user.userId) {
-      fetchDataFormApi(`/api/cart?userId=${user.userId}`)
-        .then((res) => {
-          if (Array.isArray(res)) {
-            setCartData(res);
-          } else {
-            console.error('Unexpected data format:', res);
-            setCartData([]);
-          }
-        })
-        .catch((error) => {
-          console.error('API error:', error);
-          setCartData([]);
-        });
+  const fetchCartData = async () => {
+    setLoading(true);
+    try {
+      const user = JSON.parse(localStorage.getItem("user"));
+      if (user?.userId) {
+        const res = await fetchDataFormApi(`/api/cart?userId=${user.userId}`);
+        setCartData(Array.isArray(res) ? res : []);
+      }
+    } catch (error) {
+      console.error("Error fetching cart data:", error);
+    } finally {
+      setLoading(false);
     }
+  };
+  
+  // In useEffect
+  useEffect(() => {
+    fetchCartData();
   }, []);
+  
   
 
   const handleQuantityChange = (index, value) => {
@@ -75,7 +77,7 @@ export default function ShoppingCart() {
        if (user && user.userId) {
          fetchDataFormApi(`/api/cart?userId=${user.userId}`).then((res) => {
            setCartData(res);
-           setCartItem(res.length |[]);
+           setCartItem(res.length || []);
          });
        }
       });
@@ -115,6 +117,9 @@ export default function ShoppingCart() {
   
       const session = await response.json();
       console.log('Session:', session);
+      
+      setCartData([]); // Empty the cart data in state
+      setCartItem(0); // Reset the cart count
   
       const result = await stripe.redirectToCheckout({
         sessionId: session.id

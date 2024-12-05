@@ -36,8 +36,10 @@ export const CartProvider = ({children}) => {
       const user = JSON.parse(localStorage.getItem("user"));
       if (user && user.userId) {
         fetchDataFormApi(`/api/cart?userId=${user.userId}`).then((res) => {
-          setCartItem(res.length);
+          setCartItem(res.length || 0);
         });
+      }else {
+        setCartItem(0); // If user is not logged in, set cart count to 0
       }
     }, []);
     
