@@ -125,8 +125,7 @@ export default function Signin() {
       });
       setTimeout(() => {
         setLoading(false)
-        window.location.href = '/'
-        
+        window.location.href = '/'   
       }, 3000);
        }else{
         setAlertBox({
@@ -208,7 +207,7 @@ export default function Signin() {
               <a href='#' className='text my-2'>Forgot Password?</a>
             </div>
           </div>
-         <div className="d-flex justify-content-center align-items-center w-100 my-3 ">
+         <div className="d-flex justify-content-center align-items-center w-100 my-2 ">
           <Button id='signup' type='submit' variant='contained' className='lh-0'>
             {
               loading === true ?  <CircularProgress/> : " Login  "

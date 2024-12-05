@@ -152,28 +152,50 @@ body.dark .MyAcc .user-info h4{
   font-size: 20px !important;
 }
 #account-menu .MuiPaper-elevation{
-  left:1150px !important;
+  /* left:1356px !important; */
   top:50px !important;
 }
 
  @media screen and (max-width:480px) {
   #account-menu .MuiPaper-elevation{
-    left:190px !important;
+    left:232px !important;
     top:50px !important;
   }
  }
- @media screen and (min-width:576px) and(max-width:899px) {
+ @media screen and (min-width: 481px) and (max-width:575px) {
   #account-menu .MuiPaper-elevation{
-    left:580px !important;
+    left:375px !important;
     top:50px !important;
   }
  }
- @media screen and (min-width:900px) and (max-width:950px) {
-  #account-menu .MuiPaper-elevation{
-    left:700px !important;
-    top:50px !important;
+ @media screen and (min-width: 576px) and (max-width: 799px) {
+  #account-menu .MuiPaper-elevation {
+    left: 607px !important;
+    top: 50px !important;
   }
- }
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) {
+  #account-menu .MuiPaper-elevation {
+    left: 625px !important;
+    top: 50px !important;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 950px) {
+  #account-menu .MuiPaper-elevation {
+    left: 740px !important;
+    top: 50px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1186px){
+  #account-menu .MuiPaper-elevation {
+    left: 845px !important;
+    top: 50px !important;
+  }
+}
+
 /* body.dark #account-menu .MuiPaper-elevation{
   background: #12254e !important;
   color: #fff !important;

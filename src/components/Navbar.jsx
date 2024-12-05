@@ -115,14 +115,14 @@ export default function Navbar() {
                 <div className="navbar-nav mr-auto py-0">
                   <Link
                     to="/"
-                    className="nav-item nav-link active"
+                    className={`nav-item nav-link ${location.pathname === "/" ? "active" : ""}`}
                     onClick={closeMenu}
                   >
                     Home
                   </Link>
                   <Link
                     to="/product"
-                    className="nav-item nav-link"
+                    className={`nav-item nav-link ${location.pathname.startsWith("/product") ? "active" : ""}`}
                     onClick={closeMenu}
                   >
                     Shop
@@ -145,7 +145,7 @@ export default function Navbar() {
                     <div className="dropdown-menu bg-primary rounded-0 border-0 m-0">
                       <Link
                         to="/shopping-cart"
-                        className="dropdown-item"
+                         className={`dropdown-item ${location.pathname === "/shopping-cart" ? "active" : ""}`}
                         onClick={closeMenu}
                       >
                         Shopping Cart
@@ -154,8 +154,8 @@ export default function Navbar() {
                   </div>
                   <Link
                     to="/contact"
-                    className="nav-item nav-link"
-                    onClick={closeMenu}
+                    className={`nav-item nav-link ${location.pathname === "/contact" ? "active" : ""}`}
+                      onClick={closeMenu}
                   >
                     Contact
                   </Link>

@@ -18,7 +18,7 @@ export default function HeroSection() {
                             <div class="p-3" style={{maxWidth:" 700px",}}>
                                 <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Men Fashion</h1>
                                 <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/">Shop Now</a>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/product">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ export default function HeroSection() {
                             <div class="p-3" style={{maxWidth:" 700px",}}>
                                 <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Women Fashion</h1>
                                 <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/">Shop Now</a>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/product">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ export default function HeroSection() {
                             <div class="p-3" style={{maxWidth:" 700px",}}>
                                 <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Kids Fashion</h1>
                                 <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/">Shop Now</a>
+                                <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/product">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ export default function HeroSection() {
                 <div class="offer-text">
                     <h6 class="text-white text-uppercase">Save 20%</h6>
                     <h3 class="text-white mb-3">Special Offer</h3>
-                    <a href="/" class="btn btn-primary">Shop Now</a>
+                    <a href="/product" class="btn btn-primary">Shop Now</a>
                 </div>
             </div>
             <div class="product-offer mb-30" style={{height: "200px",}}>
@@ -59,7 +59,7 @@ export default function HeroSection() {
                 <div class="offer-text">
                     <h6 class="text-white text-uppercase">Save 20%</h6>
                     <h3 class="text-white mb-3">Special Offer</h3>
-                    <a href="/" class="btn btn-primary">Shop Now</a>
+                    <a href="/product" class="btn btn-primary">Shop Now</a>
                 </div>
             </div>
         </div>
